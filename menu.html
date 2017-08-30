@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nickolas Iaquinta</title>
+        <style>
+            body {
+                background-color: lightblue;
+            }
+            h1 {
+//				color: white;
+                text-align: center;
+            }
+            h2{
+				font-family: serif;
+//				color: white;
+				text-align: center;
+			}
+			p {
+//				color: white;
+				font-family: serif;
+                text-align: center;
+			}
+        </style>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script>
+			function startTime() {
+				var today = new Date();
+				var h = today.getHours();
+				var m = today.getMinutes();
+				var s = today.getSeconds();
+				m = checkTime(m);
+				s = checkTime(s);
+				document.getElementById('txt').innerHTML =
+				h + ":" + m + ":" + s;
+				var t = setTimeout(startTime, 500);
+			}
+			function checkTime(i) {
+				if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+				return i;
+			}
+		</script>
+    </head>
+    <body>
+        <h2><i><a href="https://github.com/NLiaquin/cis255.git">My GitHub</a></h2></p>
+		<center>
+		<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
+		<p id="demo"></p>
+		</center>
+		<p>
+		<a href="https://www.buzzfeed.com/expresident/best-cat-pictures?utm_term=.dg5pyONlv#.swnEzYAQm">
+			<img border="0" src="https://img.buzzfeed.com/buzzfeed-static/static/2014-06/6/12/enhanced/webdr08/original-21313-1402070821-13.jpg?downsize=715:*&output-format=auto&output-quality=auto" width="300" height="300">
+			<img border="0" src="https://img.buzzfeed.com/buzzfeed-static/static/2014-04/enhanced/webdr07/4/16/original-16439-1396642689-17.jpg?downsize=715:*&output-format=auto&output-quality=auto" width="300" height="300">
+			<img border="0" src="https://img.buzzfeed.com/buzzfeed-static/static/2014-04/enhanced/webdr03/4/16/enhanced-26552-1396642701-1.jpg?downsize=715:*&output-format=auto&output-quality=auto" width="300" height="300">
+		</a>
+		</p>
+		<center>
+		<i class="material-icons">widgets</i>
+		<i class="material-icons" style="font-size:36px">widgets</i>
+		<i class="material-icons" style="font-size:48px;color:red">widgets</i>
+		<button style="font-size:24px">Button <i class="material-icons">widgets</i></button>
+		</center>
+    </body>
+	<body onload="startTime()">
+		<center><div id="txt"></div></center>
+	</body>
+	<footer>
+		<li><p>_____________________________</p></li>
+		<p>Page Owner: Nickolas Iaquinta</p>
+		<p>Contact: <a href="mailto:nliaquin@svsu.edu">
+		NLiaquin@svsu.edu</a>.</p>
+        <p>Last updated 8/30/2017</p>
+	</footer>
+</html>
